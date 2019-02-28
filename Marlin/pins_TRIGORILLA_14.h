@@ -31,9 +31,11 @@
 #define IS_RAMPS_EFB
 
 // FAN0 / D9  - Typically used for the part fan on Anycubic Delta devices
-#define FAN_PIN 9
+#define FAN_PIN               9
 
 // FAN1 / D7  - Typically unused, can be allocated as Case Fan
+// PINS used for 4Max
+#define CONTROLLER_FAN_PIN    7
 
 // FAN2 / D44 - Typical Extruder Fan on Anycubic Delta devices
 #define FAN2_PIN              44
@@ -41,12 +43,15 @@
 
 #include "pins_RAMPS.h"
 
+#define FIL_RUNOUT_PIN        19
+
 // TODO 1.4 boards do have an E1 stepper driver. However the pin definitions
 // from pins_RAMPS.h are incorrect for this board. e.g., Pin 44 is the Extruder fan.
 #undef E1_STEP_PIN
 #undef E1_DIR_PIN
 #undef E1_ENABLE_PIN
 #undef E1_CS_PIN
+#undef Z_MAX_PIN  // Used for FIL_RUNOUT_PIN
 
 //
 // AnyCubic made the following changes to 1.1.0-RC8
