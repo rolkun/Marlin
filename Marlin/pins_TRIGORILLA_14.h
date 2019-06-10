@@ -43,6 +43,7 @@
 
 #include "pins_RAMPS.h"
 
+#undef FIL_RUNOUT_PIN
 #define FIL_RUNOUT_PIN       19
 
 // TODO 1.4 boards do have an E1 stepper driver. However the pin definitions
