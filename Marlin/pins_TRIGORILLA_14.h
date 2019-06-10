@@ -43,7 +43,7 @@
 
 #include "pins_RAMPS.h"
 
-#define FIL_RUNOUT_PIN        19
+#define FIL_RUNOUT_PIN       19
 
 // TODO 1.4 boards do have an E1 stepper driver. However the pin definitions
 // from pins_RAMPS.h are incorrect for this board. e.g., Pin 44 is the Extruder fan.
@@ -51,6 +51,7 @@
 #undef E1_DIR_PIN
 #undef E1_ENABLE_PIN
 #undef E1_CS_PIN
+//#undef SERVO0_PIN // 
 #undef Z_MAX_PIN  // Used for FIL_RUNOUT_PIN
 
 //
