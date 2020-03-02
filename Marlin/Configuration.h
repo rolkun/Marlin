@@ -385,9 +385,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   
   // ANYCUBIC 4MAX
-  #define  DEFAULT_Kp 16.99
-  #define  DEFAULT_Ki 1.34
-  #define  DEFAULT_Kd 53.94
+  #define  DEFAULT_Kp 11.20
+  #define  DEFAULT_Ki 0.57
+  #define  DEFAULT_Kd 55.55
 #endif // PIDTEMP
 
 //===========================================================================
@@ -658,7 +658,7 @@
  */
 #define DEFAULT_XJERK                 10.0
 #define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.3
+#define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
 /**
