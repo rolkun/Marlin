@@ -385,9 +385,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   
   // ANYCUBIC 4MAX
-  #define  DEFAULT_Kp 11.20
-  #define  DEFAULT_Ki 0.57
-  #define  DEFAULT_Kd 55.55
+  #define  DEFAULT_Kp 12.77
+  #define  DEFAULT_Ki 0.68
+  #define  DEFAULT_Kd 60.13
 #endif // PIDTEMP
 
 //===========================================================================
@@ -615,7 +615,7 @@
 #define Z_ROD_PITCH 8
 #define Z_STEPS (NEMA17_MOTOR_STEPS / Z_ROD_PITCH)
 
-#define PINCH_WHEEL_DIAMETER 7.363
+#define PINCH_WHEEL_DIAMETER 7.25
 #define EXTRUDER_GEAR_RATIO 3
 
 #define E_STEPS (NEMA17_MOTOR_STEPS * EXTRUDER_GEAR_RATIO / (PINCH_WHEEL_DIAMETER * PI))
