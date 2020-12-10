@@ -5,6 +5,8 @@
 ;Print time: {print_time}
 ;Filament used: {filament_amount}m {filament_weight}g
 ;Filament cost: {filament_cost}
+M117 Auto-report temperatures every seconds
+M155 1					         		
 M117 Warming E0 to: 160
 M104 S160
 M117 Warming bed to: {material_bed_temperature_layer_0} 
@@ -23,15 +25,9 @@ M117 Printing...
 ; End of Start G-Code
 
 ; Start of End G-Code
-M104 S0      ; turn off extruder
-M140 S0      ; turn off bed
-M84          ; disable motors
-M107         ; fan off
-G91          ; relative positioning
-G1 E-2 F300  ; retract the filament a bit before lifting the nozzle, to release some of the pressure
-G1 Z+0.5 E-5 ; move Z up a bit and retract filament even more
-G90          ; absolute positioning
-G27 P0
-M84          ; steppers off
-M300 P300 S4000
+M104 S0     ; turn off extruder
+M140 S0     ; turn off bed
+M107        ; switch the fan off
+G27 P2      ; park the nozzle
+M84         ; disable motors
 ; End of End G-Code
